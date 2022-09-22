@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="font.css" type="text/css" />
+    <link rel="stylesheet" href="Estilo.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <title> #Yoprogramo </title>
+  </head>
+  
+  <style>
+    html {
+      margin: 0;
+      font-size: 16px;
+    }
+    body{
+      background:linear-gradient(90deg,rgb(254, 254, 255),rgb(0, 0, 0)),url(imagenes/obelisco-transp.png) no-repeat fixed center top  400px/cover; background-blend-mode: color;
+    }
+
+    
+    /*REDES*/
+    .social-bar {
+      position: fixed;
+      right: 0;
+      top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+  }
+
+  .icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+  }
+
+  .icon-facebook {
+    background: #2E406E;
+  }
+
+  .icon-twitter {
+    background: #339DC5;
+  }
+
+  .icon-youtube {
+    background: #E83028;
+  }
+
+  .icon-instagram {
+    background: #fcac00;
+  }
+
+  .icon:first-child {
+    border-radius: 1rem 0 0 0;
+  }
+
+  .icon:last-child {
+    border-radius: 0 0 0 1rem;
+  }
+
+  .icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+  }
+</style>
+
+
+<body> 
+
+  <!--REDES-->
+  <div>
+
+    <div class="social-bar">
+      <a href="https://www.facebook.com" class="icon icon-facebook" target="_blank"></a>
+      <a href="https://twitter.com" class="icon icon-twitter" target="_blank"></a>
+      <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"></a>
+      <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"></a>
+    </div>
+  </div>
+
+  <!--BANNER-->
+  <!-- En la parte superior izquierda deberá contener el logo y nombre #Yoprogramo. Deberá tener un banner que me represente, que será una parte importante de mi identidad. Debé evitar cualquier fondo que se considere ofensivo o fuera de la línea del programa -->
+  <!-- En la parte superior derecha deberá contar con redes sociales y un botón que permita el login para edición -->
+ <!-- style="background-image: url(/imagenes/banner.jpeg);background-repeat: no-repeat ; background-size: cover;" -->
+  <div class="container-fluid" style="background: linear-gradient(90deg, #ff8000,#a75804); border-bottom: #0048ff solid 5px;">
+    <div class="row d-block">
+      <div class="col text-start">
+        <img src="imagenes/AP logo.png" width="200px" style="opacity: 50%" alt="" />
+      </div>
+      <div class="col text-end" style="display:inline-block; padding-bottom:10px;">
+        <button type="button" class="btn btn-primary" style="box-shadow: 5px 5px black;"><i class="bi bi-door-open"></i>logout</button>
+      </div>
+    </div>
+  </div>
+  <!--PERFIL-->
+  <!-- Acerca de ... en esta sección se encuentra la foto de perfil, nombre y título (Full Stack Developer Js). Aquí debo poner información profesional resumida-->
+  <div class="container" style="border-bottom: 3px solid rgb(254, 169, 0)justify-content: center  ;">
+    <h1 style="text-align:center;color: aliceblue; border-bottom:1px solid rgb(254, 169, 0);text-shadow: 1px 1px 4px rgb(254, 169, 5);">Perfil</h1>
+
+    <div class="row">
+
+      <div class="col" style="float: left;">
+        <img src="imagenes/avatar-perfil.png" class="img-responsive rounded-circle" height="236" width="304"
+          alt="foto de perfil" />
+        <button type="button" class="btn btn-primary"
+          style="box-shadow: 5px 5px black;position:absolute; transform:translate(-50px, 20px)"><i
+            class="bi bi-camera"></i></button>
+
+      </div>
+
+
+      <div class="col-md-6">
+
+        <div class="mt-lg-5 py-4">
+          <textarea class="form-control" cols="6" rows="3" autofocus placeholder="..."
+            id="floatingTextarea2"></textarea>
+          <label for="floatingTextarea2"></label>
+        </div>
+      </div>
+
+      <div class="col py-4">
+        <button type="button" class="btn btn-primary"><i class="bi bi-pencil"></i></button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-eraser"></i></i></button>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!--Experiencia ...Aquí debo colocar toda la información de los lugares donde he trabajado, incluyendo título del puesto, periodo, logo de la empresa, si lo encuentro y descripción de las actividades realizadas en ese puesto-->
+  <div class="container" style="border-bottom: 3px solid rgb(254, 169, 0) ;justify-content: center">
+    <h1 style="text-align:center;color: aliceblue; border-bottom:1px solid rgb(254, 169, 0);text-shadow: 1px 1px 4px rgb(254, 169, 5);">Experiencia laboral</h1>
+    <div class="col-md-6">
+     
+      <div class="mb-3 mt-3">
+        <label for="exampleFormControlInput1" class="form-label">Puesto</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Área profesional</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Especialidad">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre de empresa</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre de empresa">
+      </div>
+
+      <div class="mb-3"> Funciones y logros del cargo
+        <textarea class="form-control" cols="6" rows="3" autofocus placeholder="..."
+          id="floatingTextarea2"></textarea>
+        <label for="floatingTextarea2"></label>
+      </div>
+    </div>
+
+    <div class="col py-4">
+      <button type="button" class="btn btn-primary"><i class="bi bi-pencil"></i></button>
+      <button type="button" class="btn btn-primary"><i class="bi bi-eraser"></i></i></button>
+    </div>
+  </div>
+  <!--Educación... Escribir toda la información académica, certificaciones, cursos, y todo lo relacionado al título con el que actuamente cuento. Es importante detallar imformación de la institución, el logo (de ser posible), nombre, carrera o título estudiado, y en qué periodo o año.-->
+  <div class="container" style="border-bottom: 3px solid rgb(254, 169, 0) ;justify-content: center;">
+    <h1 style="text-align:center;color: aliceblue; border-bottom:1px solid rgb(254, 169, 0);text-shadow: 1px 1px 4px rgb(254, 169, 5);">Formación</h1>
+    <div class="col-md-6">
+
+      <div class="mb-3 mt-3">
+        <label for="exampleFormControlInput1" class="form-label">Centro educativo</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Instituto/Universidad...">
+      </div>
+      
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nivel de estudios</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Secundario/Terciario/Universitario...">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Completo
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Incompleto
+        </label>
+      </div>
+      
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Cursando
+        </label>
+      </div>
+      
+      <div class="mb-3 mt-3">
+        <label for="exampleFormControlInput1" class="form-label">Área profesional</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Especialidad">
+      </div>
+      
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">descripción:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" cols="6" rows="3"></textarea>
+      </div>
+      <div class="col py-4">
+        <button type="button" class="btn btn-primary"><i class="bi bi-pencil"></i></button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-eraser"></i></i></button>
+      </div>
+    </div>
+  </div>
+    <!--Hard & soft Skills - Dashboard --> 
+    <div class="container" style="border-bottom: 3px solid rgb(254, 169, 0) ;justify-content: center;">
+      <h1 style="text-align:center;color: aliceblue; border-bottom:1px solid rgb(254, 169, 0);text-shadow: 1px 1px 4px rgb(254, 169, 5);">Hard & Soft Skills</h1>
+      <div class="col-md-6" style="background-color: black ; width:100px;height: 100px;">
+<h6 style="color: red ;">Dashboard en proceso</h6>
+      </div>
+    </div>
+
+    <!--Proyectos ... contener info de proyectos que realice o me involucre, incluyendo este mismo portfolio web. Cada proyecto deberá contener el nombre, fecha de realización, descripción y en el link a su evidencia. Además poder ilustrar esta seccion con imagenes de los proyectos.-->
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+  </body>
+  
+  </html>

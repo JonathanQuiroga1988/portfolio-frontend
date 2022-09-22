@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Login #yoprogramo </title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+
+<style>
+    body {
+        background: #0ac6eb;
+        background: radial-gradient(#f7bcf6, #3f87a6);
+       
+     }
+    .bg{
+        background-image: url(imagenes/fondo.jpg);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px ;
+        background-position: center center;
+        box-shadow: 10px 5px5px #030303;
+    }
+</style>
+
+<head>
+    <body>
+        
+        <div class="container w-75 bg-transparent mt-5 rounded-end shadow">
+            
+            <div class="row align-items-stretch">
+                
+                <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-start shadow">
+                
+                </div>
+                
+                <div class="col">
+                   <div class="text-end">
+                      <img src="imagenes/AP logo.png" width="100" alt="" style="background-color:blue ;" />
+                   </div>
+                
+                <h2 class="fw-bold text-center py-5"> Bienvenido</h2>
+            
+            
+
+             <!--LOGIN-->
+             <form action="#">
+                <div class="mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Password</label>Email</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="mb-4 form-check">
+                    <input type="checkbox" name="connect" class="form-check-input">
+                    <label for="connect" class="form-check-label">No cerrar sesión</label>
+
+
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
+                <div class="my-3">
+                    <span>¿No tienes cuenta?</span> <a href="#">Creá una cuenta</a><br>
+                    <span><a href="#">¿Has olvidado la contraseña?</a> </span>
+                </div>
+             </form>
+             <!-- LOGIN CON REDES SOCIALES-->
+            <div class="container w-100 my-5">
+                <div class="row text-center">
+                    <div class="col-12">Iniciar sesión con:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-outline-primary w-100 my-1">
+                        <div class="row align-items-center">
+                            <div class="col-2 d-none d-md-block">
+                                <img src="imagenes/fb.png" width="32" alt="">
+                            </div>
+                            <div class="col-12 col-md-10 text-center">
+                                facebook
+                            </div>
+
+                        </div>
+                    
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-secondary w-100 my-1">
+                            <div class="row align-items-center">
+                                <div class="col-2 d-none d-md-block">
+                                    <img src="imagenes/google.png" width="32" alt="">
+                                </div>
+                                <div class="col-12 col-md-10  text-center">
+                                    google
+                                </div>
+    
+                            </div>
+                        
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</head>
+
+
+</html>

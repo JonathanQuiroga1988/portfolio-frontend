@@ -1,0 +1,43 @@
+.grid-container {
+
+    display: grid;
+    margin-top: 100px;
+    padding-top: 50px ;
+    height: auto;
+    grid-template-areas: 
+    'header header header'
+    'perfil perfil perfil'
+    'experiencia experiencia experiencia'
+    'educacion educacion educacion'
+    'skills skills skills'
+    'dashboard dashboard dashboard'
+    'proyectos proyectos proyectos';
+}
+
+.grid-container div {
+    text-align: center;
+    border: 1px solid black;
+}
+.item1{
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: perfil;
+}
+
+.item3 {
+    grid-area: experiencia;
+}
+
+.item4 {
+    grid-area: educacion;
+}
+
+.item5 {
+    grid-area: skills;
+}
+
+.item6 {
+    grid-area: proyectos;
+}
